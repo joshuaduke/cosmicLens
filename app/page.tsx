@@ -1,20 +1,89 @@
 import { Button } from "@/components/ui/button";
-import { Telescope } from "lucide-react";
+import { Field } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
+import {
+	InputGroup,
+	InputGroupAddon,
+	InputGroupInput,
+} from "@/components/ui/input-group";
+import { Search, Telescope, Brain } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-white">
-      <main className="flex-1">{/* Hero Section*/}
-        <section className="containter mx-auto px-4 py-32">
-          <h2 className="text-black">Welcome to CosmicLens</h2> 
-          <Link href={"/search"}>
-            <Button>Explore the Universe <Telescope className="ml-2"/> </Button>
-          </Link>
-          
-        </section>
-      </main>
-    </div>
+		<div className="w-full min-h-screen  bg-white">
+			<main className="">
+				{/* Hero Section*/}
+				<section className="containter flex flex-col gap-2 mx-auto px-4 py-32">
+					<div className="border w-fit rounded-md px-2">
+						<p className="flex items-center">
+							<Brain className="mr-1" size={20} />
+							AI-Powered Space Explorer...
+						</p>
+					</div>
+
+					<div>
+						<h1 className="text-5xl">
+							Explore the{" "}
+							<span>
+								Universe <br />
+								Through AI{" "}
+							</span>
+						</h1>
+						<p className="mt-2">
+							Discover stunning images from NASA's Hubble and JWST
+							<br />
+							telescopes with AI-generated insights and
+							explanations.
+						</p>
+					</div>
+
+					<div className="flex justify-between items-center">
+						<InputGroup className="max-w-md">
+							<InputGroupInput placeholder="Search deep space images..." />
+							<InputGroupAddon>
+								<Search className="ml-2" />
+							</InputGroupAddon>
+							<Button>Search </Button>
+						</InputGroup>
+
+						<div className="border border-black rounded-md flex items-center gap-2 pr-4">
+							<Image
+								src={"/pillars_of_creation.webp"}
+								width={70}
+								height={70}
+								alt="Pillars of creation taken by Hubble"
+								className="p-2"
+							/>
+							<div className="flex flex-col gap-y-1">
+								<h3 className="text-xl">Pillars of Creation</h3>
+								<div className="flex gap-2 items-center">
+									<div className="flex items-center border rounded-md gap-2 p-1">
+										<Telescope />
+										<span>Hubble</span>
+									</div>
+
+									<p>Captured: Apr 1, 2014</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="flex gap-x-2">
+						<p>Examples:</p>
+						<ul className="flex gap-x-2">
+							<li className="border rounded-sm px-2">Nebula</li>
+							<li className="border rounded-sm px-2">Galaxies</li>
+							<li className="border rounded-sm px-2">
+								JWST 2023
+							</li>
+							<li className="border rounded-sm px-2">
+								Star Cluster
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+		</div>
   );
 }

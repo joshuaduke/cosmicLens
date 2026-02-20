@@ -124,3 +124,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+*{
+  line-height: 1.4em;
+}
