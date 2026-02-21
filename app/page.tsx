@@ -12,10 +12,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-		<div className="w-full min-h-screen  bg-white">
-			<main className="">
+		<div className="w-full  bg-main-bg">
+			<main className="container mx-auto px-10">
 				{/* Hero Section*/}
-				<section className="containter flex flex-col gap-2 mx-auto px-4 py-32">
+				<section className="flex flex-col gap-2 mx-auto py-32">
 					<div className="border w-fit rounded-md px-2">
 						<p className="flex items-center">
 							<Brain className="mr-1" size={20} />
@@ -81,6 +81,74 @@ export default function Home() {
 								Star Cluster
 							</li>
 						</ul>
+					</div>
+				</section>
+				{/* {Featured Discoveries} */}
+				<section>
+					<div className="flex py-2 items-center">
+						<h2 className="w-64 text-2xl font-bold">
+							Feature Discoveries
+						</h2>
+						<hr className="w-full flex-1" />
+					</div>
+
+					<div className="flex justify-between ">
+						<div className="flex flex-col border rounded-lg">
+							<Image
+								src={"/spiralGalaxy.png"}
+								width={225}
+								height={100}
+								alt="Sprial Galaxy NGC 1300"
+								className="rounded-t-lg"
+							/>
+
+							<div className="p-2">
+								<h2 className="font-bold">Spiral Galaxy</h2>
+								<p>Hubble . Galaxy</p>
+							</div>
+						</div>
+						<div className="flex flex-col border rounded-lg">
+							<Image
+								src={"/spiralGalaxy.png"}
+								width={225}
+								height={100}
+								alt="Sprial Galaxy NGC 1300"
+								className="rounded-t-lg"
+							/>
+
+							<div className="p-2">
+								<h2 className="font-bold">Spiral Galaxy</h2>
+								<p>Hubble . Galaxy</p>
+							</div>
+						</div>
+						<div className="flex flex-col border rounded-lg">
+							<Image
+								src={"/spiralGalaxy.png"}
+								width={225}
+								height={100}
+								alt="Sprial Galaxy NGC 1300"
+								className="rounded-t-lg"
+							/>
+
+							<div className="p-2">
+								<h2 className="font-bold">Spiral Galaxy</h2>
+								<p>Hubble . Galaxy</p>
+							</div>
+						</div>
+						<div className="flex flex-col border rounded-lg">
+							<Image
+								src={"/spiralGalaxy.png"}
+								width={225}
+								height={100}
+								alt="Sprial Galaxy NGC 1300"
+								className="rounded-t-lg"
+							/>
+
+							<div className="p-2">
+								<h2 className="font-bold">Spiral Galaxy</h2>
+								<p>Hubble . Galaxy</p>
+							</div>
+						</div>
 					</div>
 				</section>
 			</main>

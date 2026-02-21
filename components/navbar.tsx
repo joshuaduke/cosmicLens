@@ -15,19 +15,24 @@ export default function Navbar() {
 						<Telescope />
 						<h1>CosmicLens</h1>
 					</Link>
+				</div>
+
+				<div className="flex items-center gap-8">
 					<Link href={"/search"}>Search</Link>
 					<Link href={"/search"}>Telescope</Link>
 					<Link href={"/search"}>Collections</Link>
 					<Link href={"/search"}>About</Link>
-				</div>
 
-				<div className="flex items-center gap-4">
-					<Link href={"/login"}>
-						<Button>Login</Button>
-					</Link>
-					<Link href={"/sign-up"}>
-						<Button>Get Started</Button>
-					</Link>
+					<div>
+						<Link className="mr-1" href={"/login"}>
+							<Button className="bg-primary">Login</Button>
+						</Link>
+						<Link href={"/sign-up"}>
+							<Button className="bg-primary-soft text-primary ">
+								Get Started
+							</Button>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</nav>

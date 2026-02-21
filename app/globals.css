@@ -32,8 +32,12 @@
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
+  --color-main-bg: var(--main-bg);
+  --color-surface: var(--surface);
+  --color-section: var(--section);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-primary-soft: var(--primary-soft);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -55,8 +59,35 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+
+  /* Backgrounds */
+  --color-bg:  oklch(61.49% 0.2079 262.36);         /* #F4F7FB */
+  --color-surface: rgb(255 255 255);   /* #FFFFFF */
+  --color-section: rgb(234 241 255);   /* #EAF1FF */
+  
+  /* Brand */
+  --primary: oklch(61.49% 0.2079 262.36);        /* #3A7BFF */
   --primary-foreground: oklch(0.985 0 0);
+  --primary-soft: oklch(94.4% 0.0266 262.34);  /* #E3EDFF */
+  --color-primary-hover: rgb(47 105 230);  /* #2F69E6 */
+
+  /* Text */
+  --color-text: rgb(28 35 51);         /* #1C2333 */
+  --color-muted: rgb(92 107 138);      /* #5C6B8A */
+  --color-subtle: rgb(154 167 194);    /* #9AA7C2 */
+
+  /* Accent */
+  --color-purple: rgb(124 92 250);     /* #7C5CFA */
+  --color-gold: rgb(245 185 66);       /* #F5B942 */
+
+  /* Border */
+  --color-border: rgb(225 231 245);    /* #E1E7F5 */
+
+  /* States */
+  --color-success: rgb(62 213 152);    /* #3ED598 */
+  --color-error: rgb(255 92 122);      /* #FF5C7A */
+  --color-warning: rgb(255 176 32);    /* #FFB020 */
+
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -80,6 +111,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
 }
 
 .dark {
