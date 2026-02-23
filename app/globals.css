@@ -53,7 +53,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(97.62% 0.0111 269.55);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -61,9 +61,9 @@
   --popover-foreground: oklch(0.145 0 0);
 
   /* Backgrounds */
-  --color-bg:  oklch(61.49% 0.2079 262.36);         /* #F4F7FB */
+  --color-bg:  oklch(97.62% 0.0111 269.55);         /* #F4F7FB */
   --color-surface: rgb(255 255 255);   /* #FFFFFF */
-  --color-section: rgb(234 241 255);   /* #EAF1FF */
+  --section:oklch(95.7% 0.0203 264.47);   /* #EAF1FF */
   
   /* Brand */
   --primary: oklch(61.49% 0.2079 262.36);        /* #3A7BFF */

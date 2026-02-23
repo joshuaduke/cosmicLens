@@ -18,10 +18,10 @@ export default function Navbar() {
 				</div>
 
 				<div className="flex items-center gap-8">
-					<Link href={"/search"}>Search</Link>
-					<Link href={"/search"}>Telescope</Link>
-					<Link href={"/search"}>Collections</Link>
-					<Link href={"/search"}>About</Link>
+					<Link href={"/explore"}>Search</Link>
+					<Link href={"/explore"}>Telescope</Link>
+					<Link href={"/explore"}>Collections</Link>
+					<Link href={"/explore"}>About</Link>
 
 					<div>
 						<Link className="mr-1" href={"/login"}>

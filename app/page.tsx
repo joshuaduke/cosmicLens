@@ -10,8 +10,15 @@ import { Search, Telescope, Brain } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
-  return (
+export default async function Home() {
+	// const data = await fetch(
+	// 	`https://api.nasa.gov/planetary/apod?api_key=${process.env.API_KEY}`,
+	// );
+	// const response = await data.json();
+
+	// console.log(response);
+
+	return (
 		<div className="w-full  bg-main-bg">
 			<main className="container mx-auto px-10">
 				{/* Hero Section*/}
@@ -45,7 +52,9 @@ export default function Home() {
 							<InputGroupAddon>
 								<Search className="ml-2" />
 							</InputGroupAddon>
-							<Button>Search </Button>
+							<Link href={"/explore"}>
+								<Button>Search </Button>
+							</Link>
 						</InputGroup>
 
 						<div className="border border-black rounded-md flex items-center gap-2 pr-4">
@@ -153,5 +162,5 @@ export default function Home() {
 				</section>
 			</main>
 		</div>
-  );
+	);
 }
