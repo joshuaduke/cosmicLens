@@ -13,14 +13,15 @@ export default function SearchBar() {
 
 	return (
 		<Form className="w-full p-8 inset-shadow-sm/15" action="/explore">
-			{/* Search Section */}
 			<InputGroup className="max-w-md">
-				<InputGroupInput name="search" placeholder="Search deep space images..." />
+				<InputGroupInput
+					name="search"
+					placeholder="Search deep space images..."
+				/>
 				<InputGroupAddon>
 					<Search className="ml-2" />
 				</InputGroupAddon>
 				<Button type="submit">Search </Button>
-				
 			</InputGroup>
 		</Form>
 	);

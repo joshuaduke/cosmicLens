@@ -109,6 +109,7 @@ export default async function Home() {
 								height={100}
 								alt="Sprial Galaxy NGC 1300"
 								className="rounded-t-lg"
+								style={{ width: "auto" }}
 							/>
 
 							<div className="p-2">
@@ -123,6 +124,7 @@ export default async function Home() {
 								height={100}
 								alt="Sprial Galaxy NGC 1300"
 								className="rounded-t-lg"
+								style={{ width: "auto" }}
 							/>
 
 							<div className="p-2">
@@ -137,6 +139,7 @@ export default async function Home() {
 								height={100}
 								alt="Sprial Galaxy NGC 1300"
 								className="rounded-t-lg"
+								style={{ width: "auto" }}
 							/>
 
 							<div className="p-2">
@@ -151,6 +154,7 @@ export default async function Home() {
 								height={100}
 								alt="Sprial Galaxy NGC 1300"
 								className="rounded-t-lg"
+								style={{ width: "auto" }}
 							/>
 
 							<div className="p-2">
