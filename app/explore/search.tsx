@@ -1,6 +1,5 @@
-// import { getSearchResults } from '@/lib/search'
-
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function SearchResults({
 	searchParams,
@@ -21,7 +20,7 @@ export default async function SearchResults({
 		);
 	} else {
 		response = await fetch(
-			`https://images-api.nasa.gov/search?q=${search}&media_type=image`,
+			`https://images-api.nasa.gov/search?q=${search}&keywords=jwst,hubble&media_type=image`,
 		);
 	}
 
@@ -41,7 +40,8 @@ export default async function SearchResults({
 				<ul className="grid grid-cols-3 gap-4">
 					{data != undefined &&
 						data.collection.items.map((element: any) => (
-							<div
+							<Link
+								href={`/explore/${element.data[0].nasa_id}`}
 								className="justify-center items-center"
 								key={element.data[0].nasa_id}
 							>
@@ -72,7 +72,7 @@ export default async function SearchResults({
 
 								{/* <Image src={"https://images-assets.nasa.gov/image/hubble-eyes-galactic-refurbishment_17322896925_o/hubble-eyes-galactic-refurbishment_17322896925_o~medium.jpg"} alt={element.data[0].description} width={1000} height={1000}/>   */}
 								{/* <Image src={element.links[3].href} alt={element.data[0].description} width={element.links[3].width} height={element.links[3].height}/>   */}
-							</div>
+							</Link>
 						))}
 				</ul>
 			)}

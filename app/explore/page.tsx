@@ -19,11 +19,12 @@ import SearchBar from "@/components/searchbar";
 import SearchResults from "./search";
 
 // search param as props
-export default function Explore({searchParams, }: {searchParams: Promise<{[key: string]: string | string[] | undefined}>}) {
-
+export default async function Explore({searchParams, }: {searchParams: Promise<{[key: string]: string | string[] | undefined}>}) {
+	const results = (await searchParams).search
+	console.log("Search Params", results);
 	const testing = true;
 	return (
-		<div className="flex bg-white">
+		<div className=" bg-white">
 
 			<div className="flex flex-col w-full">
 				<SearchBar/>

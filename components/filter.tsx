@@ -94,7 +94,7 @@ export default function filter() {
 	return (
 		/* Filter Section */
 		/* Create new filter component and extract to layout */
-		<div className="h-screen p-8 min-fit bg-section inset-shadow-sm/15">
+		<div className="h-screen p-8 basis-1/4 bg-section inset-shadow-sm/15">
 			<h2 className="text-2xl">Filters</h2>
 
 			<RadioGroup

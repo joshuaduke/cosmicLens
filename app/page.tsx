@@ -1,3 +1,4 @@
+import SearchBar from "@/components/searchbar";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
@@ -47,7 +48,8 @@ export default async function Home() {
 					</div>
 
 					<div className="flex justify-between items-center">
-						<InputGroup className="max-w-md">
+						<SearchBar />
+						{/* <InputGroup className="max-w-md">
 							<InputGroupInput placeholder="Search deep space images..." />
 							<InputGroupAddon>
 								<Search className="ml-2" />
@@ -55,7 +57,7 @@ export default async function Home() {
 							<Link href={"/explore"}>
 								<Button>Search </Button>
 							</Link>
-						</InputGroup>
+						</InputGroup> */}
 
 						<div className="border border-black rounded-md flex items-center gap-2 pr-4">
 							<Image
